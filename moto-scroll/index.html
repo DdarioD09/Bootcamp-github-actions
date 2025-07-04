@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moto Scroll</title>
+    <style>
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        main {
+            height: 300dvh;
+        }
+
+        header {
+            background: linear-gradient(40deg, #be7c00, #aa0000 40%);
+            width: 300px;
+            height: 300px;
+            border-radius: 10000px;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            margin-top: -200px;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            /* animation: slideInDown 1.5s ease-out; */
+            animation-name: slideInDown;
+            animation-duration: 1.5s;
+            animation-timing-function: ease-out;
+        }
+
+        img {
+            width: 200px;
+            margin: 0 auto;
+            height: auto;
+            margin-bottom: 50px;
+
+        }
+
+        @keyframes slideInDown {
+            from {
+                transform: translate3d(-50%, -100%, 0);
+                opacity: 0;
+            }
+
+            to {
+                transform: translate3d(-50%, 0, 0);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <header>
+            <img src="logo.png" alt="ichiban-logo" />
+        </header>
+        Here are going the motorcicles 🏍️
+    </main>
+</body>
+
+</html>
