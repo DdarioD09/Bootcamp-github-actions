@@ -1,0 +1,14 @@
+name: "Deploy codigofacilito first class"
+
+on:
+  push:
+    branches: ["master"]
+
+jobs:
+  deploy-codigofacilito:
+    run-on: ubuntu-latest
+    steps:
+      run: echo "Pull of the code"
+      run: echo "Run migrations"
+      run: echo "Binary generation"
+      run: echo "Publish version"
