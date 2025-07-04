@@ -6,7 +6,7 @@ on:
 
 jobs:
   deploy-codigofacilito:
-    run-on: ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
       - run: echo "Pull of the code"
       - run: echo "Run migrations"
